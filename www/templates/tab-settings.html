@@ -1,0 +1,29 @@
+<ion-view view-title="Setting">
+  <ion-content class="padding">
+   
+      <ion-list>
+       
+       
+       <ion-item ng-click="toggleShown()"
+              ng-class="{active: isCardsShown()}">
+              <i class="icon" ng-class="isCardsShown() ? 'ion-ios-arrow-down' : 'ion-ios-arrow-right'"></i>
+              {{deck.length}} Selected Cards 
+        </ion-item>
+        <ion-item class="row"
+                    ng-show="isCardsShown()"
+                    ng-repeat="card in deck">
+            <div class="col">{{card.value}}</div>
+            <div class="col">{{card.suit}}</div>
+            <div class="col"><img ng-src="{{card.url}}"/></div>
+        </ion-item >
+        
+         
+        <ion-item >
+          <button class="button" ng-click="resetSelected()">Reset</button>
+        </ion-item>
+       
+    </ion-list>
+    
+    </ion-list>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,15 @@
+<ion-view view-title="Pick Card">
+  <ion-content class="padding">
+    
+    <button class="button col" ng-click="pickCard()">
+       Pick 1 of {{deck.length}}
+    </button>
+    <div id="picked" class="row">
+      
+      <div class="col">{{picked.value}}</div>
+      <div class="col">{{picked.suit}}</div>
+      <div class="col"><img src="{{picked.url}}"/></div>
+    </div>
+      
+  </ion-content>
+</ion-view>

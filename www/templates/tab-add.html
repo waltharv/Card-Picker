@@ -1,0 +1,143 @@
+<ion-view view-title="Add Card">
+  <ion-content class="padding">
+
+<div class="row">
+		<div class="col">
+			<button class="button" ng-click="addCard();">
+				Add
+			</button>
+		</div>
+		<div class="col">
+			<button class="button" ng-click="addReset();">
+				<i class="ion-ios-reload"></i>
+			</button>
+		</div>
+		<div class="col">{{card.value}} </div>
+
+		<div class="col">	
+			 {{card.suit}} </div>
+
+	 </div>
+ 	<div class="row">
+  		<div class="col">
+  			<button class="button" ng-show="valueShow('2')" ng-click="faceValueSelect($event);">
+  				2
+  			</button>
+  		</div>
+
+  		<div class="col">
+  			<button class="button" ng-show="valueShow('3')"  ng-click="faceValueSelect($event);">
+  				3
+  			</button>
+  		</div>
+
+  		<div class="col">
+  			<button class="button" ng-show="valueShow('4')"  ng-click="faceValueSelect($event);">
+  				4
+  			</button>
+  		</div>
+
+  		<div class="col">
+  			<button class="button" ng-show="valueShow('5')"  ng-click="faceValueSelect($event);">
+  				5
+  			</button>
+  		</div>
+
+  	
+ 	</div>
+  	<div class="row">
+  		<div class="col">
+  			<button class="button" ng-show="valueShow('6')"  ng-click="faceValueSelect($event);">
+  				6
+  			</button>
+  		</div>
+
+  		<div class="col">
+  			<button class="button" ng-show="valueShow('7')"  ng-click="faceValueSelect($event);">
+  				7
+  			</button>
+  		</div>
+
+  		<div class="col">
+  			<button class="button" ng-show="valueShow('8')"  ng-click="faceValueSelect($event);">
+  				8
+  			</button>
+  		</div>
+
+  		<div class="col">
+  			<button class="button" ng-show="valueShow('9')"  ng-click="faceValueSelect($event);">
+  				9
+  			</button>
+  		</div>
+
+  		
+ 	</div>
+  	<div class="row">
+  		<div class="col">
+  			<button class="button" ng-show="valueShow('10')"  ng-click="faceValueSelect($event);">
+  				10
+  			</button>
+  		</div>
+
+  		<div class="col">
+  			<button class="button" ng-show="valueShow('J')"  ng-click="faceValueSelect($event);">
+  				J
+  			</button>
+  		</div>
+
+  		<div class="col">
+  			<button class="button" ng-show="valueShow('Q')"  ng-click="faceValueSelect($event);">
+  				Q
+  			</button>
+  		</div>
+
+  		<div class="col">
+  			<button class="button" ng-show="valueShow('K')"  ng-click="faceValueSelect($event);">
+  				K
+  			</button>
+  		</div>
+
+  		
+ 	</div>
+  	<div class="row">
+  		<div class="col">
+  			<button class="button" ng-show="valueShow('A')"  ng-click="faceValueSelect($event);">
+  				A
+  			</button>
+  		</div>
+  	</div>
+	  
+<!--	  <h3>Suit</h3>-->
+
+ 	<div class="row">
+  		<div class="col">
+  			<button class="button no-padding  suit-icon"  ng-show="suitShow('clubs')" ng-click="suitSelect('clubs');">
+  				<img class="no-padding suit-icon" ng-src="{{'img/c.png'}}"/>
+  			</button>
+  		</div>
+
+  		<div class="col">
+  			<button class="button no-padding  suit-icon"   ng-show="suitShow('spades')" ng-click="suitSelect('spades');">
+  				<img class="no-padding suit-icon"  ng-src="{{'img/s.png'}}"/>
+  			</button>
+  		</div>
+
+  		<div class="col">
+  			<button class="button no-padding  suit-icon"   ng-show="suitShow('hearts')" ng-click="suitSelect('hearts');">
+  				<img class="no-padding suit-icon"  ng-src="{{'img/h.png'}}" />
+  			</button>
+  		</div>
+
+  		<div class="col">
+  			<button class="button no-padding  suit-icon"   ng-show="suitShow('diamonds')" ng-click="suitSelect('diamonds');">
+  				<img class="no-padding suit-icon"  ng-src="{{'img/d.png'}}" />
+  			</button>
+  		</div>
+
+  	</div>
+	  
+	
+	  
+	   
+  </ion-content>
+</ion-view>

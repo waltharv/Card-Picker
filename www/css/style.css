@@ -1,0 +1,23 @@
+/* Empty. Add your own CSS if you like */
+
+
+.no-padding {
+    padding: 0px !important;
+}
+.suit-icon{
+    width: 50px;
+    height: 45px;
+ }
+
+/*.list .item.item-expand {
+  line-height: 40px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.list .item.item-expand.ng-hide {
+  line-height: 0px;
+}
+.list .item.item-expand.ng-hide-add,
+.list .item.item-expand.ng-hide-remove {
+  display: block !important;
+}*/
